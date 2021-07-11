@@ -1,0 +1,47 @@
+@media screen and (max-width: 768px) {
+  nav.y {
+    background: transparent;
+    position: absolute;
+  }
+  nav.y ul {
+    background: black;
+  }
+  nav.v {
+    background: transparent;
+    position: absolute;
+  }
+  nav.v ul {
+    background: white;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  footer .logo {
+    display: none;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  br {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  footer ul {
+    font-size: 11px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 344px) {
+  .contact-infol {
+    margin-left: 0px;
+  }
+  .contact-infor {
+    margin-right: 0px;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

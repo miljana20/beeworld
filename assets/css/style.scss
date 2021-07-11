@@ -1,0 +1,324 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+$y:rgb(230, 172, 0);
+$black:rgb(0, 0, 0);
+$white:rgb(255, 255, 255);
+$bbgray:rgb(204, 204, 204);
+$bgray:rgb(51, 51, 51);
+$dgray:rgb(20, 20, 20);
+$bviolet:rgb(188, 188, 220);
+$font:'Poppins', sans-serif;
+body{
+    font-family: $font;
+    &.y{
+        background-color: $dgray;
+    }
+    &.v{
+        background-color: $white;
+    }
+}
+.header{
+    text-align: center;
+    &-y{
+        background-color: $bgray;
+        .info{
+            display: flex;
+        }
+        i{
+            color:$y;
+            font-size: 25px;
+            padding: 14px 0px;
+            margin-right: 15px;
+        }
+        h4{
+            margin-top: 6px;
+            color: $white;
+            font-size: 20px;
+        }
+        p{
+            color:$bbgray;
+            font-size: 12px;
+        }
+    }
+    &-v{
+        background-color: $bgray;
+        .info{
+            display: flex;
+        }
+        i{
+            color:$bviolet;
+            font-size: 25px;
+            padding: 14px 0px;
+            margin-right: 15px;
+        }
+        h4{
+            margin-top: 6px;
+            color: $white;
+            font-size: 20px;
+        }
+        p{
+            color:$bbgray;
+            font-size: 12px;
+        }
+    }
+}
+nav{
+    &.y{
+        background-color: $black;
+        a{
+            color: $y;
+            transition: 1s;
+            &:hover{
+                color: $white;
+                transition: 1s;
+            }
+        }
+    }
+    &.v{
+        background-color: $bbgray;
+        a{
+        color: $bgray;
+            &:hover{
+                color: $white;
+                transition: 1s;
+            }
+        }
+    }
+}
+button:focus{
+    outline: none;
+}
+h2{ 
+    &.y{
+        color: $y;
+        font-size: 25px;
+        text-shadow: -10px -12px 4px $bgray ;
+    }
+    &.v{
+        color: $black;
+        font-size: 25px;
+        text-shadow: -10px -12px 4px $bviolet ;
+    }
+}
+.info{
+    &-y{
+        p{
+            color: $bbgray;
+            mark{
+                color: $y;
+                background: transparent;
+            }
+        }
+    }
+    &-v{
+        p{
+            color: $bgray;
+            mark{
+                color: $bviolet;
+                background: transparent;
+            }
+        }
+    }
+}
+.start{
+    &-v{
+        background-color: rgba(51, 51, 51, 0.1);
+        h1{
+            color: $dgray;
+            text-shadow: -2px -2px 5px $black;
+        }
+        .breadcrumb{
+            background-color: transparent; 
+            a{
+                color: $black;
+                transition: 1s;
+                &:hover{
+                    color: $white;
+                    transition: 1s;
+                }
+            }
+        }
+    }
+    &-y{
+        background-color: rgba(255, 255, 255, 0.1);
+        h1{
+            color: $white;
+            text-shadow: -2px -2px 5px $y;
+        }
+        .breadcrumb{
+            background-color: transparent; 
+            a{
+                color: $y;
+                transition: 1s;
+                &:hover{
+                    color: $bbgray;
+                    transition: 1s;
+                }
+            }
+        }
+    }
+}
+.card{
+    background-color: $bgray;
+    h5{
+        color: $white;
+    }
+    p{
+        color: $bbgray;
+    }
+}
+.author{
+    a{
+        transition: 1s;
+        color: $white;
+        &:hover{
+            transition: 1s;
+            color: $y;
+            text-decoration: none;
+        }
+    }
+}
+.bgimage{
+    background: {
+        image: url("../img/slika2.jpg");
+        position: center;;
+        size: cover;
+        repeat:no-repeat;
+        attachment: fixed;
+    }
+}
+.contact{
+    &-info{
+        &l{
+            margin-left: 5px;
+        }
+        &r{
+            margin-right: 5px;
+        }
+    }
+    ul{
+        list-style-type: none;
+        li{
+            a{
+                background-color:$bbgray;
+                color: $white;
+                transition: 1s;
+                &:hover{
+                    color: $bbgray;
+                    background: transparent;
+                    border: solid 0.5px $bbgray;
+                    transition: 00.5s;
+                }
+            }
+        }
+    }
+    h3{
+        font-family: $font;
+    }
+    p{
+        color: $bbgray;
+    }
+    form{
+        input[type=text],input[type=email], textarea{
+            color: $bbgray;
+            font-family: $font;
+            &:focus{
+                border: none;
+            }
+        }
+        input[type=submit]{
+            color: $bbgray;
+            transition: 1s;
+            &:hover{
+                transition: 0.5s;
+                border: 1px solid gray;
+            }
+        }
+    }
+    .map{
+        height: 300px;
+        width: 100%;
+    }
+}
+footer{
+    &.y{
+        background: $black;
+        ul{
+            list-style-type: none;
+            color: $y;
+            li{
+                a{
+                    color: $bbgray;
+                    transition: 1s;
+                    &:hover{
+                        color: $y;
+                        transition: 1s;
+                        text-decoration: none;
+                        i{
+                            transition: 1s;
+                            color: $bbgray;
+                        }
+                    }
+                    i{
+                        color: $y;
+                        transition: 1s;
+                    }
+                }
+            }
+        }
+        p{
+            color: $bgray;
+            #mn{
+                color: $y;
+                transition: 1s;
+                &:hover{
+                    color: $bbgray;
+                    transition: 1s;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    &.v{
+        background: $bgray;
+        ul{
+            list-style-type: none;
+            color: $bviolet;
+            li{
+                a{
+                    color: $bbgray;
+                    transition: 1s;
+                    &:hover{
+                        color: $white;
+                        transition: 1s;
+                        text-decoration: none;
+                        i{
+                            transition: 1s;
+                            color: $white;
+                        }
+                    }
+                    i{
+                        color: $bviolet;
+                        transition: 1s;
+                    }
+                }
+            }
+        }
+        p{
+            color: $bbgray;
+            #mn{
+                color: $bviolet;
+                transition: 1s;
+                &:hover{
+                    color: $white;
+                    transition: 1s;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
